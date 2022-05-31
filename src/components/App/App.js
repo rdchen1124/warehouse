@@ -1,11 +1,19 @@
 import React from "react";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import Home from '../../pages/Home';
 
 function App() {
   return (
     <div>
-        <p>
-          Initial <code>App.js</code> code.
-        </p>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
