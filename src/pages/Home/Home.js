@@ -1,14 +1,15 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
+import { MainRoot } from '../../components/Root';
+
 const Home = () => {
   return (
-    <Col xs={12} md={9} className="mx-0 bg-success">
+    <MainRoot>
       <main>
         <div>
-          Col main
+          Welcome!
         </div>
       </main>
-    </Col>
+    </MainRoot>
   )
 }
 export default Home;

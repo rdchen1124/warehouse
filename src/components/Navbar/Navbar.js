@@ -1,9 +1,10 @@
 import React from 'react';
-import { Col, Nav } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import { NavRoot } from '../Root';
 
 const Navbar = () => {
   return (
-    <Col xs={12} md={3} className="mx-0 bg-light">
+    <NavRoot>
       <Nav variant="pills" defaultActiveKey="/" className="flex-column">
         <Nav.Item>
           <Nav.Link eventKey="hello" disabled>Hi, User</Nav.Link>
@@ -21,7 +22,7 @@ const Navbar = () => {
           <Nav.Link eventKey="User">User</Nav.Link>
         </Nav.Item>
       </Nav>
-    </Col>
+    </NavRoot>
   )
 }
 
