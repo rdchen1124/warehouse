@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react';
-
+import React from 'react';
+import { Col } from 'react-bootstrap';
 const Home = () => {
   return (
-    <Fragment>
+    <Col xs={12} md={9} className="mx-0 bg-success">
       <main>
         <div>
-          <h2>Home page</h2>
+          Col main
         </div>
       </main>
-    </Fragment>
+    </Col>
   )
 }
 export default Home;
